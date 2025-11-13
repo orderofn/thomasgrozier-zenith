@@ -29,14 +29,11 @@ const Products = () => {
     <section id="products" className="py-24 relative">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8">
         <div className="text-center mb-16 animate-fade-in">
-          <div className="inline-block mb-6 px-4 py-2 rounded-full border border-primary/30 bg-primary/10">
-            <span className="text-primary font-semibold">Our Solutions</span>
-          </div>
           <h2 className="text-4xl lg:text-5xl font-bold mb-6">
-            <span className="gradient-text">Specialized Lubricants</span>
+            <span className="gradient-text">Our Products</span>
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            Engineered for the most demanding industrial applications
+            Specialized lubricant solutions for diverse industrial applications
           </p>
         </div>
 
