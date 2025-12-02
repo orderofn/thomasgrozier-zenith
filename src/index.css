@@ -8,40 +8,40 @@ All colors MUST be HSL.
 
 @layer base {
   :root {
-    --background: 220 25% 8%;
-    --foreground: 210 40% 98%;
+    --background: 210 40% 98%;
+    --foreground: 220 25% 15%;
 
-    --card: 220 20% 12%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 30% 99%;
+    --card-foreground: 220 25% 15%;
 
-    --popover: 220 20% 10%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 30% 99%;
+    --popover-foreground: 220 25% 15%;
 
-    --primary: 190 100% 50%;
-    --primary-foreground: 220 25% 8%;
+    --primary: 214 95% 45%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 20% 18%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25% 93%;
+    --secondary-foreground: 220 25% 15%;
 
-    --muted: 220 20% 15%;
-    --muted-foreground: 215 20% 65%;
+    --muted: 210 25% 93%;
+    --muted-foreground: 220 15% 40%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 220 25% 8%;
+    --accent: 214 95% 45%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 20%;
-    --input: 220 20% 15%;
-    --ring: 190 100% 50%;
+    --border: 210 30% 85%;
+    --input: 210 30% 90%;
+    --ring: 214 95% 45%;
 
     --radius: 0.75rem;
     
-    --gradient-primary: linear-gradient(135deg, hsl(190, 100%, 50%) 0%, hsl(200, 100%, 40%) 100%);
-    --gradient-dark: linear-gradient(180deg, hsl(220, 25%, 8%) 0%, hsl(220, 25%, 5%) 100%);
-    --shadow-glow: 0 0 40px hsla(190, 100%, 50%, 0.3);
-    --shadow-card: 0 10px 40px -10px hsla(190, 100%, 50%, 0.2);
+    --gradient-primary: linear-gradient(135deg, hsl(214, 95%, 50%) 0%, hsl(200, 100%, 55%) 100%);
+    --gradient-dark: linear-gradient(180deg, hsl(210, 40%, 96%) 0%, hsl(210, 35%, 92%) 100%);
+    --shadow-glow: 0 0 30px hsla(214, 95%, 45%, 0.2);
+    --shadow-card: 0 10px 30px -10px hsla(214, 95%, 45%, 0.15);
 
     --sidebar-background: 0 0% 98%;
 
@@ -61,33 +61,33 @@ All colors MUST be HSL.
   }
 
   .dark {
-    --background: 220 25% 5%;
-    --foreground: 210 40% 98%;
+    --background: 210 30% 95%;
+    --foreground: 220 25% 20%;
 
-    --card: 220 20% 10%;
-    --card-foreground: 210 40% 98%;
+    --card: 210 25% 97%;
+    --card-foreground: 220 25% 20%;
 
-    --popover: 220 20% 8%;
-    --popover-foreground: 210 40% 98%;
+    --popover: 210 25% 97%;
+    --popover-foreground: 220 25% 20%;
 
-    --primary: 190 100% 50%;
-    --primary-foreground: 220 25% 5%;
+    --primary: 214 95% 45%;
+    --primary-foreground: 210 40% 98%;
 
-    --secondary: 220 20% 15%;
-    --secondary-foreground: 210 40% 98%;
+    --secondary: 210 25% 91%;
+    --secondary-foreground: 220 25% 20%;
 
-    --muted: 220 20% 12%;
-    --muted-foreground: 215 20% 60%;
+    --muted: 210 25% 91%;
+    --muted-foreground: 220 15% 45%;
 
-    --accent: 190 100% 50%;
-    --accent-foreground: 220 25% 5%;
+    --accent: 214 95% 45%;
+    --accent-foreground: 210 40% 98%;
 
     --destructive: 0 62% 50%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 220 20% 18%;
-    --input: 220 20% 12%;
-    --ring: 190 100% 50%;
+    --border: 210 25% 88%;
+    --input: 210 25% 92%;
+    --ring: 214 95% 45%;
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
     --sidebar-primary: 224.3 76.3% 48%;
@@ -117,19 +117,19 @@ All colors MUST be HSL.
 
 @layer utilities {
   .glass-card {
-    @apply bg-card/40 backdrop-blur-xl border border-border/50;
+    @apply bg-card/60 backdrop-blur-xl border border-border/50 shadow-sm;
   }
   
   .glass-card-hover {
-    @apply glass-card transition-all duration-300 hover:bg-card/60 hover:border-primary/50 hover:shadow-[0_0_30px_rgba(0,217,255,0.2)];
+    @apply glass-card transition-all duration-300 hover:bg-card/80 hover:border-primary/50 hover:shadow-md;
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-cyan-400 bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-primary via-blue-600 to-cyan-500 bg-clip-text text-transparent;
   }
   
   .btn-primary {
-    @apply bg-gradient-to-r from-primary to-cyan-400 text-primary-foreground font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-[0_0_30px_rgba(0,217,255,0.4)] hover:scale-105;
+    @apply bg-gradient-to-r from-primary to-cyan-500 text-white font-semibold px-8 py-3 rounded-lg transition-all duration-300 hover:shadow-lg hover:scale-105;
   }
   
   .btn-outline {

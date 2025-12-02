@@ -1,12 +1,14 @@
+import logoBanner from "@/assets/logo-banner-blue.png";
+
 const Footer = () => {
   return (
     <footer className="border-t border-border/50 bg-card/30 backdrop-blur-xl">
       <div className="container mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="mb-8">
+          <img src={logoBanner} alt="Thomas Grozier & Son" className="h-16 w-auto mx-auto mb-8" />
+        </div>
         <div className="grid md:grid-cols-4 gap-8 mb-8">
           <div className="md:col-span-2">
-            <h3 className="text-2xl font-bold mb-4">
-              <span className="gradient-text">Thomas Grozier & Son</span>
-            </h3>
             <p className="text-muted-foreground mb-4 max-w-md">
               A fourth generation family business supplying quality industrial lubricants worldwide since 1940.
             </p>
