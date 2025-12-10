@@ -19,20 +19,20 @@ const Contact = () => {
     {
       icon: Phone,
       label: "Phone",
-      value: "+61 2 9620 9843",
+      value: "+61 02 9620 9843",
       href: "tel:+61296209843",
     },
     {
       icon: Mail,
       label: "Email",
-      value: "info@thomasgrozier.com.au",
-      href: "mailto:info@thomasgrozier.com.au",
+      value: "sales@thomasgrozier.com",
+      href: "mailto:sales@thomasgrozier.com",
     },
     {
       icon: MapPin,
       label: "Address",
-      value: "Sydney, Australia",
-      href: "#",
+      value: "2/8 Prince William Drive, Seven Hills, NSW, 2147, Australia",
+      href: "https://maps.google.com/?q=2/8+Prince+William+Drive+Seven+Hills+NSW+2147+Australia",
     },
   ];
 

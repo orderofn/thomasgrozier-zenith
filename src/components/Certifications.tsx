@@ -1,4 +1,4 @@
-import { Award, CheckCircle, Shield, FileCheck } from "lucide-react";
+import { Award, CheckCircle, Shield, FileCheck, Droplets, Download } from "lucide-react";
 
 const Certifications = () => {
   const certifications = [
@@ -9,8 +9,13 @@ const Certifications = () => {
     },
     {
       icon: Shield,
-      title: "WRAS Approved",
+      title: "WRAS BS6920 Approved",
       description: "Water Regulations Advisory Scheme approval for products used in potable water systems.",
+    },
+    {
+      icon: Droplets,
+      title: "WaterMark AS/NZS 4020",
+      description: "Australian/New Zealand standard approval for products in contact with drinking water.",
     },
     {
       icon: FileCheck,
@@ -21,6 +26,25 @@ const Certifications = () => {
       icon: CheckCircle,
       title: "Environmental Standards",
       description: "Committed to sustainable practices and environmental responsibility.",
+    },
+  ];
+
+  const certificates = [
+    {
+      name: "WRAS Approval Letter",
+      file: "/certificates/2203503_approval_letterWRAS.pdf",
+    },
+    {
+      name: "SAI Global Certificate",
+      file: "/certificates/Certificate_of_registration_Sai_Global_1.pdf",
+    },
+    {
+      name: "ACS Certificate",
+      file: "/certificates/ACS_THOMAS_GROZIER_24_CLP_LY_036_1.pdf",
+    },
+    {
+      name: "Certificate of Conformity",
+      file: "/certificates/CERTIFICATE_OF_CONFORMITY.pdf",
     },
   ];
 
@@ -41,7 +65,7 @@ const Certifications = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
           {certifications.map((cert, index) => (
             <div
               key={index}
@@ -57,16 +81,35 @@ const Certifications = () => {
           ))}
         </div>
 
-        <div className="mt-16 glass-card p-8 md:p-12 rounded-2xl text-center max-w-4xl mx-auto">
-          <h3 className="text-3xl font-bold mb-4">
-            <span className="gradient-text">Ongoing Commitment to Quality</span>
+        {/* Downloadable Certificates */}
+        <div className="mt-16 glass-card p-8 md:p-12 rounded-2xl max-w-4xl mx-auto">
+          <h3 className="text-3xl font-bold mb-6 text-center">
+            <span className="gradient-text">Download Our Certificates</span>
           </h3>
-          <p className="text-lg text-muted-foreground mb-8 leading-relaxed">
-            Our certifications reflect our dedication to maintaining the highest standards in manufacturing, 
-            safety, and environmental responsibility. We continuously invest in quality assurance to exceed 
-            industry expectations.
-          </p>
+          <div className="grid sm:grid-cols-2 gap-4">
+            {certificates.map((cert, index) => (
+              <a
+                key={index}
+                href={cert.file}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="flex items-center gap-4 p-4 rounded-xl bg-background/50 border border-border hover:border-primary/30 transition-all group"
+              >
+                <div className="p-3 rounded-lg bg-primary/10 text-primary group-hover:bg-primary group-hover:text-primary-foreground transition-colors">
+                  <FileCheck className="h-5 w-5" />
+                </div>
+                <span className="font-medium flex-1">{cert.name}</span>
+                <Download className="h-5 w-5 text-muted-foreground group-hover:text-primary transition-colors" />
+              </a>
+            ))}
+          </div>
+        </div>
+
+        <div className="mt-12 text-center">
           <div className="flex flex-wrap justify-center gap-4">
+            <div className="px-6 py-3 rounded-lg bg-primary/10 border border-primary/30">
+              <span className="text-primary font-semibold">ABN: 71 087 973 466</span>
+            </div>
             <div className="px-6 py-3 rounded-lg bg-primary/10 border border-primary/30">
               <span className="text-primary font-semibold">Regular Audits</span>
             </div>

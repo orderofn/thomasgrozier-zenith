@@ -3,9 +3,19 @@ import { FileText, Download } from "lucide-react";
 const DataSheets = () => {
   const datasheets = [
     {
+      name: "BK Watermain Lubricant",
+      file: "/datasheets/BK_LUBRICANT_DATA_SHEET.pdf",
+      category: "Pipe Jointing",
+    },
+    {
+      name: "BK Standard Watermain Lubricant",
+      file: "/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf",
+      category: "Pipe Jointing",
+    },
+    {
       name: "Standard Lube",
       file: "/datasheets/STANDARD_LUBE_DATA_SHEET.pdf",
-      category: "Lubricants",
+      category: "Pipe Jointing",
     },
     {
       name: "Prover Lubricant",
@@ -25,7 +35,7 @@ const DataSheets = () => {
     {
       name: "Cub Puffers",
       file: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
-      category: "Lubricants",
+      category: "Graphites",
     },
     {
       name: "No.1 Flake Graphite",
@@ -48,13 +58,18 @@ const DataSheets = () => {
       category: "Graphites",
     },
     {
+      name: "9092 Graphite",
+      file: "/datasheets/9092_GRAPHITE.pdf",
+      category: "Graphites",
+    },
+    {
       name: "Grograph 201",
       file: "/datasheets/GROGRAPH_201.pdf",
       category: "Graphites",
     },
   ];
 
-  const categories = ["Lubricants", "Chain Solutions", "Graphites"];
+  const categories = ["Pipe Jointing", "Lubricants", "Chain Solutions", "Graphites"];
 
   return (
     <section id="datasheets" className="py-24 relative">
