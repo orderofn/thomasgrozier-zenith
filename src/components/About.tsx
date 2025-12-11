@@ -1,5 +1,5 @@
-import { CheckCircle2, Award, Globe, Users } from "lucide-react";
-import manufacturingImage from "@/assets/manufacturing.jpg";
+import { Award, Globe, Users } from "lucide-react";
+import manufacturingImage from "@/assets/industries/di-pipes.jpg";
 
 const About = () => {
   const features = [
