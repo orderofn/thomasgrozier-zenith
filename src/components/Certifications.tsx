@@ -1,4 +1,6 @@
-import { Award, CheckCircle, Shield, FileCheck, Droplets, Download } from "lucide-react";
+import { Award, Shield, Droplets, Download, FileCheck } from "lucide-react";
+import wrasLogo from "@/assets/products/wras-logo.jpg";
+import watermarkLogo from "@/assets/products/watermark-logo.jpg";
 
 const Certifications = () => {
   const certifications = [
@@ -17,16 +19,6 @@ const Certifications = () => {
       title: "WaterMark AS/NZS 4020",
       description: "Australian/New Zealand standard approval for products in contact with drinking water.",
     },
-    {
-      icon: FileCheck,
-      title: "AS 2536 Compliant",
-      description: "Meeting Australian Standards for industrial lubricants and quality assurance.",
-    },
-    {
-      icon: CheckCircle,
-      title: "Environmental Standards",
-      description: "Committed to sustainable practices and environmental responsibility.",
-    },
   ];
 
   const certificates = [
@@ -35,7 +27,7 @@ const Certifications = () => {
       file: "/certificates/2203503_approval_letterWRAS.pdf",
     },
     {
-      name: "SAI Global Certificate",
+      name: "SAI Global Certificate (ISO 9001)",
       file: "/certificates/Certificate_of_registration_Sai_Global_1.pdf",
     },
     {
@@ -65,7 +57,23 @@ const Certifications = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-2 lg:grid-cols-5 gap-6">
+        {/* Certification Logos */}
+        <div className="flex flex-wrap justify-center gap-8 mb-16">
+          <div className="glass-card p-6 rounded-xl flex items-center justify-center">
+            <img src={watermarkLogo} alt="WaterMark Certification" className="h-20 w-auto" />
+          </div>
+          <div className="glass-card p-6 rounded-xl flex items-center justify-center">
+            <img src={wrasLogo} alt="WRAS Certification" className="h-20 w-auto" />
+          </div>
+          <div className="glass-card p-6 rounded-xl flex items-center justify-center">
+            <div className="text-center">
+              <Award className="h-12 w-12 text-primary mx-auto mb-2" />
+              <span className="text-sm font-semibold text-foreground">ISO 9001</span>
+            </div>
+          </div>
+        </div>
+
+        <div className="grid md:grid-cols-3 gap-6">
           {certifications.map((cert, index) => (
             <div
               key={index}

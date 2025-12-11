@@ -2,25 +2,29 @@ import { ArrowRight, Download } from "lucide-react";
 import bkWatermainImage from "@/assets/products/bk-watermain.jpg";
 import bkStandardImage from "@/assets/products/bk-standard-watermain.jpg";
 import standardLubeImage from "@/assets/products/standard-lube.jpg";
-import graphiteImage from "@/assets/products/graphite-products.jpg";
+import flakeGraphiteImage from "@/assets/products/flake-graphite-1.jpg";
 import cubPuffersImage from "@/assets/products/cub-puffers.jpg";
 import ovenChainImage from "@/assets/industries/oven-chain.jpg";
+import wrasLogo from "@/assets/products/wras-logo.jpg";
+import watermarkLogo from "@/assets/products/watermark-logo.jpg";
 
 const Products = () => {
   const products = [
     {
       title: "BK Watermain Bactericidal Lubricant",
-      description: "Watermark and WRAS approved lubricant for pipes supplying potable water. Also used in Fire supply industries and Tunnel Boring Machines (TBM).",
+      description: "WaterMark AS/NZS 4020 approved lubricant for pipes supplying potable water.",
       image: bkWatermainImage,
-      features: ["WaterMark Approved", "WRAS BS6920", "Potable Water Safe"],
+      features: ["WaterMark AS/NZS 4020 Approved", "Potable Water Safe", "Bactericidal Formula"],
       datasheet: "/datasheets/BK_LUBRICANT_DATA_SHEET.pdf",
+      logos: [watermarkLogo],
     },
     {
       title: "BK Standard Watermain Lubricant",
-      description: "Watermark and WRAS approved bactericidal pipe jointing lubricant for pipes supplying potable water.",
+      description: "WaterMark AS/NZS 4020 and WRAS approved bactericidal pipe jointing lubricant for pipes supplying potable water. Also used in Fire supply industries and Tunnel Boring Machines (TBM).",
       image: bkStandardImage,
-      features: ["WaterMark Approved", "WRAS BS6920", "Bactericidal Formula"],
+      features: ["WaterMark AS/NZS 4020 Approved", "WRAS BS6920", "Bactericidal Formula"],
       datasheet: "/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf",
+      logos: [watermarkLogo, wrasLogo],
     },
     {
       title: "Standard Pipe Jointing Lubricant",
@@ -28,20 +32,23 @@ const Products = () => {
       image: standardLubeImage,
       features: ["Sewer Pipes", "Rubber Ring Compatible", "Industrial Grade"],
       datasheet: "/datasheets/STANDARD_LUBE_DATA_SHEET.pdf",
+      logos: [],
     },
     {
       title: "Graphite Products",
-      description: "Microfyne graphite lubricants for locks, hinges, bearings, fishing gear, mowers and more. The atom bomb of lubricants!",
-      image: graphiteImage,
-      features: ["Microfyne Formula", "Multi-Purpose", "Long Lasting"],
-      datasheet: "/datasheets/MICROFYNE_GRAPHITE_DATA_SHEET.pdf",
+      description: "Our Graphite is a high purity natural crystalline graphite. Typical uses: Lubricants, Packings, Brake linings, Conductive coatings, Batteries, Seed lubricant.",
+      image: flakeGraphiteImage,
+      features: ["High Purity", "Natural Crystalline", "Multi-Purpose"],
+      datasheet: "/datasheets/9092_GRAPHITE.pdf",
+      logos: [],
     },
     {
       title: "Cub Puffers",
-      description: "Spray lubricant that keeps auto locks and outdoor hinges from freezing. Perfect for locks, guns, bearings, and fishing gear.",
+      description: "Microfyne graphite lubricants for locks, hinges, bearings, fishing gear, mowers and more. The atom bomb of lubricants! Keeps auto locks and outdoor hinges from freezing.",
       image: cubPuffersImage,
       features: ["Auto Locks", "Anti-Freeze", "Easy Spray"],
       datasheet: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
+      logos: [],
     },
     {
       title: "Oven Chain Lubricant",
@@ -49,6 +56,7 @@ const Products = () => {
       image: ovenChainImage,
       features: ["Food Safe", "High Temperature", "Chain Protection"],
       datasheet: "/datasheets/FJ9220_CHAIN_LUBRICANT.pdf",
+      logos: [],
     },
   ];
 
@@ -78,6 +86,18 @@ const Products = () => {
                   className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent"></div>
+                {product.logos && product.logos.length > 0 && (
+                  <div className="absolute top-3 right-3 flex gap-2">
+                    {product.logos.map((logo, logoIndex) => (
+                      <img
+                        key={logoIndex}
+                        src={logo}
+                        alt="Certification logo"
+                        className="h-12 w-auto rounded bg-white/90 p-1"
+                      />
+                    ))}
+                  </div>
+                )}
               </div>
 
               <div className="p-6">
