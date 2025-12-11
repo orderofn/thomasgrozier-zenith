@@ -2,7 +2,7 @@ import { ArrowRight, Download } from "lucide-react";
 import bkWatermainImage from "@/assets/products/bk-watermain.jpg";
 import bkStandardImage from "@/assets/products/bk-standard-watermain.jpg";
 import standardLubeImage from "@/assets/products/standard-lube.jpg";
-import flakeGraphiteImage from "@/assets/products/flake-graphite-1.jpg";
+import graphiteProductsImage from "@/assets/products/graphite-products.jpg";
 import cubPuffersImage from "@/assets/products/cub-puffers.jpg";
 import ovenChainImage from "@/assets/industries/oven-chain.jpg";
 import wrasLogo from "@/assets/products/wras-logo.jpg";
@@ -20,9 +20,9 @@ const Products = () => {
     },
     {
       title: "BK Standard Watermain Lubricant",
-      description: "WaterMark AS/NZS 4020 and WRAS approved bactericidal pipe jointing lubricant for pipes supplying potable water. Also used in Fire supply industries and Tunnel Boring Machines (TBM).",
+      description: "WaterMark AS/NZS 4020 and WRAS BS6920 approved bactericidal pipe jointing lubricant for pipes supplying potable water. Also used in Fire supply industries and Tunnel Boring Machines (TBM).",
       image: bkStandardImage,
-      features: ["WaterMark AS/NZS 4020 Approved", "WRAS BS6920", "Bactericidal Formula"],
+      features: ["WaterMark AS/NZS 4020 Approved", "WRAS BS6920 Approved", "Fire Supply & TBM Applications"],
       datasheet: "/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf",
       logos: [watermarkLogo, wrasLogo],
     },
@@ -36,8 +36,8 @@ const Products = () => {
     },
     {
       title: "Graphite Products",
-      description: "Our Graphite is a high purity natural crystalline graphite. Typical uses: Lubricants, Packings, Brake linings, Conductive coatings, Batteries, Seed lubricant.",
-      image: flakeGraphiteImage,
+      description: "Our Graphite is a high purity natural crystalline graphite. Typical uses: Lubricants, Packings, Brake Linings, Conductive coatings, Batteries, Seed lubricant.",
+      image: graphiteProductsImage,
       features: ["High Purity", "Natural Crystalline", "Multi-Purpose"],
       datasheet: "/datasheets/9092_GRAPHITE.pdf",
       logos: [],

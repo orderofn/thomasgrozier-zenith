@@ -46,26 +46,31 @@ const DataSheets = () => {
       name: "9092 Graphite",
       file: "/datasheets/9092_GRAPHITE.pdf",
       category: "Graphites",
+      order: 1,
     },
     {
       name: "Microfyne Graphite",
       file: "/datasheets/MICROFYNE_GRAPHITE_DATA_SHEET.pdf",
       category: "Graphites",
+      order: 2,
     },
     {
       name: "Cub Puffers",
       file: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
       category: "Graphites",
+      order: 3,
     },
     {
       name: "No.1 Flake Graphite",
       file: "/datasheets/NO.1_FLAKE_GRAPHITE.pdf",
       category: "Graphites",
+      order: 4,
     },
     {
       name: "No.2 Flake Graphite",
       file: "/datasheets/NO.2_FLAKE_GRAPHITE.pdf",
       category: "Graphites",
+      order: 5,
     },
   ];
 
@@ -135,10 +140,10 @@ const DataSheets = () => {
         </div>
 
         <div className="space-y-12">
-          {categories.map((category) => {
-            const categorySheets = datasheets.filter(
-              (sheet) => sheet.category === category
-            );
+        {categories.map((category) => {
+            const categorySheets = datasheets
+              .filter((sheet) => sheet.category === category)
+              .sort((a, b) => (a.order || 0) - (b.order || 0));
             if (categorySheets.length === 0) return null;
 
             return (
