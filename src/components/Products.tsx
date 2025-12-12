@@ -2,7 +2,7 @@ import { ArrowRight, Download } from "lucide-react";
 import bkWatermainImage from "@/assets/products/bk-watermain.jpg";
 import bkStandardImage from "@/assets/products/bk-standard-watermain.jpg";
 import standardLubeImage from "@/assets/products/standard-lube.jpg";
-import graphitePowderImage from "@/assets/products/graphite-powder.jpg";
+import graphitePowderImage from "@/assets/products/graphite-powder-new.jpg";
 import cubPuffersImage from "@/assets/products/cub-puffers-new.jpg";
 import ovenChainImage from "@/assets/industries/oven-chain.jpg";
 import wrasLogo from "@/assets/products/wras-logo.jpg";
