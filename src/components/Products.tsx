@@ -39,12 +39,13 @@ const Products = () => {
       description: "Our Graphite is a high purity natural crystalline graphite. Typical uses: Lubricants, Packings, Brake Linings, Conductive coatings, Batteries, Seed lubricant.",
       image: graphitePowderImage,
       features: ["High Purity", "Natural Crystalline", "Multi-Purpose"],
-      datasheet: "/datasheets/9092_GRAPHITE.pdf",
+      datasheet: null,
+      helperText: "Please see individual products in the Data Sheets section to view and download their respective data sheets.",
       logos: [],
     },
     {
       title: "Cub Puffers",
-      description: "Microfyne graphite lubricants for locks, hinges, bearings, fishing gear, mowers and more. The atom bomb of lubricants! Keeps auto locks and outdoor hinges from freezing.",
+      description: "Dixon Microfyne Graphite lubricants for locks, hinges, bearings, fishing gear, mowers and more. The atom bomb of lubricants! Keeps auto locks and outdoor hinges from freezing.",
       image: cubPuffersImage,
       features: ["Auto Locks", "Anti-Freeze", "Easy Spray"],
       datasheet: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
@@ -55,7 +56,8 @@ const Products = () => {
       description: "High-performance chain lubricant for bakery and food processing equipment operating at elevated temperatures.",
       image: ovenChainImage,
       features: ["Food Safe", "High Temperature", "Chain Protection"],
-      datasheet: "/datasheets/FJ9220_CHAIN_LUBRICANT.pdf",
+      datasheet: null,
+      helperText: "Please see individual products in the Data Sheets section to view and download their respective data sheets.",
       logos: [],
     },
   ];
@@ -113,16 +115,20 @@ const Products = () => {
                   ))}
                 </div>
 
-                <a 
-                  href={product.datasheet}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="flex items-center space-x-2 text-primary font-semibold group-hover:space-x-3 transition-all"
-                >
-                  <Download className="h-4 w-4" />
-                  <span>Download Data Sheet</span>
-                  <ArrowRight className="h-4 w-4" />
-                </a>
+                {product.datasheet ? (
+                  <a 
+                    href={product.datasheet}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center space-x-2 text-primary font-semibold group-hover:space-x-3 transition-all"
+                  >
+                    <Download className="h-4 w-4" />
+                    <span>Download Data Sheet</span>
+                    <ArrowRight className="h-4 w-4" />
+                  </a>
+                ) : product.helperText ? (
+                  <p className="text-sm text-muted-foreground italic">{product.helperText}</p>
+                ) : null}
               </div>
             </div>
           ))}

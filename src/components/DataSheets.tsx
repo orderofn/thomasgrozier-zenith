@@ -49,7 +49,7 @@ const DataSheets = () => {
       order: 1,
     },
     {
-      name: "Microfyne Graphite",
+      name: "Dixon Microfyne Graphite",
       file: "/datasheets/MICROFYNE_GRAPHITE_DATA_SHEET.pdf",
       category: "Graphites",
       order: 2,
@@ -77,51 +77,35 @@ const DataSheets = () => {
   const sdsSheets = [
     {
       name: "BK Watermain Lubricant SDS",
-      file: "/datasheets/BK_LUBRICANT_DATA_SHEET.pdf",
+      file: "/sds/BK_LUBE_SDS.pdf",
     },
     {
       name: "BK Standard Watermain Lubricant SDS",
-      file: "/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf",
+      file: "/sds/BKSTANDARD_LUBE_SDS.pdf",
     },
     {
       name: "Standard Lube SDS",
-      file: "/datasheets/STANDARD_LUBE_DATA_SHEET.pdf",
+      file: "/sds/STANDARD_LUBE_SDS.pdf",
     },
     {
       name: "Prover Lubricant SDS",
-      file: "/datasheets/Prover_Lubricant.pdf",
+      file: "/sds/PROVER_LUBE_SDS.pdf",
     },
     {
       name: "AL63 SDS",
-      file: "/datasheets/AL63.pdf",
+      file: "/sds/AL63_SDS.pdf",
     },
     {
       name: "FJ9220 Chain Lubricant SDS",
-      file: "/datasheets/FJ9220_CHAIN_LUBRICANT.pdf",
+      file: "/sds/FJ9220_SDS.pdf",
     },
     {
       name: "Grograph 201 SDS",
-      file: "/datasheets/GROGRAPH_201.pdf",
+      file: "/sds/GROGRAPH_201_SDS.pdf",
     },
     {
-      name: "9092 Graphite SDS",
-      file: "/datasheets/9092_GRAPHITE.pdf",
-    },
-    {
-      name: "Microfyne Graphite SDS",
-      file: "/datasheets/MICROFYNE_GRAPHITE_DATA_SHEET.pdf",
-    },
-    {
-      name: "Cub Puffers SDS",
-      file: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
-    },
-    {
-      name: "No.1 Flake Graphite SDS",
-      file: "/datasheets/NO.1_FLAKE_GRAPHITE.pdf",
-    },
-    {
-      name: "No.2 Flake Graphite SDS",
-      file: "/datasheets/NO.2_FLAKE_GRAPHITE.pdf",
+      name: "Graphites SDS (applies to all graphite products)",
+      file: "/sds/GRAPHITES_SDS.pdf",
     },
   ];
 
