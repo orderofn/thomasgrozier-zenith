@@ -1,6 +1,7 @@
 import { Award, Shield, Droplets, Download, FileCheck } from "lucide-react";
 import wrasLogo from "@/assets/products/wras-logo.jpg";
 import watermarkLogo from "@/assets/products/watermark-logo.jpg";
+import iso9001Logo from "@/assets/iso-9001-logo.jpg";
 
 const Certifications = () => {
   const certifications = [
@@ -35,7 +36,7 @@ const Certifications = () => {
       file: "/certificates/ACS_THOMAS_GROZIER_24_CLP_LY_036_1.pdf",
     },
     {
-      name: "Certificate of Conformity",
+      name: "Watermark Certificate of Conformity",
       file: "/certificates/CERTIFICATE_OF_CONFORMITY.pdf",
     },
   ];
@@ -66,10 +67,7 @@ const Certifications = () => {
             <img src={wrasLogo} alt="WRAS Certification" className="h-20 w-auto" />
           </div>
           <div className="glass-card p-6 rounded-xl flex items-center justify-center">
-            <div className="text-center">
-              <Award className="h-12 w-12 text-primary mx-auto mb-2" />
-              <span className="text-sm font-semibold text-foreground">ISO 9001</span>
-            </div>
+            <img src={iso9001Logo} alt="ISO 9001 Certification" className="h-20 w-auto" />
           </div>
         </div>
 
