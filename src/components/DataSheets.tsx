@@ -1,74 +1,76 @@
 import { FileText, Download, AlertTriangle } from "lucide-react";
 
 const DataSheets = () => {
+  const BASE = import.meta.env.BASE_URL;
+
   const datasheets = [
     {
       name: "BK Watermain Lubricant",
-      file: "/datasheets/BK_LUBRICANT_DATA_SHEET.pdf",
+      file: `${BASE}/datasheets/BK_LUBRICANT_DATA_SHEET.pdf`,
       category: "Pipe Jointing",
     },
     {
       name: "BK Standard Watermain Lubricant",
-      file: "/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf",
+      file: `${BASE}/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf`,
       category: "Pipe Jointing",
     },
     {
       name: "Standard Lube",
-      file: "/datasheets/STANDARD_LUBE_DATA_SHEET.pdf",
+      file: `${BASE}/datasheets/STANDARD_LUBE_DATA_SHEET.pdf`,
       category: "Pipe Jointing",
     },
     {
       name: "Prover Lubricant",
-      file: "/datasheets/Prover_Lubricant.pdf",
+      file: `${BASE}/datasheets/Prover_Lubricant.pdf`,
       category: "High Temperature Lubricants",
     },
     {
       name: "AL63",
-      file: "/datasheets/AL63.pdf",
+      file: `${BASE}/datasheets/AL63.pdf`,
       category: "High Temperature Lubricants",
     },
     {
       name: "Grograph 201",
-      file: "/datasheets/GROGRAPH_201.pdf",
+      file: `${BASE}/datasheets/GROGRAPH_201.pdf`,
       category: "High Temperature Lubricants",
     },
     {
       name: "FJ9220 Chain Lubricant",
-      file: "/datasheets/FJ9220_CHAIN_LUBRICANT.pdf",
+      file: `${BASE}/datasheets/FJ9220_CHAIN_LUBRICANT.pdf`,
       category: "Chain Solutions",
     },
     {
       name: "Grograph 201",
-      file: "/datasheets/GROGRAPH_201.pdf",
+      file: `${BASE}/datasheets/GROGRAPH_201.pdf`,
       category: "Chain Solutions",
     },
     {
       name: "9092 Graphite",
-      file: "/datasheets/9092_GRAPHITE.pdf",
+      file: `${BASE}/datasheets/9092_GRAPHITE.pdf`,
       category: "Graphites",
       order: 1,
     },
     {
       name: "Dixon Microfyne Graphite",
-      file: "/datasheets/MICROFYNE_GRAPHITE_DATA_SHEET.pdf",
+      file: `${BASE}/datasheets/MICROFYNE_GRAPHITE_DATA_SHEET.pdf`,
       category: "Graphites",
       order: 2,
     },
     {
       name: "Cub Puffers",
-      file: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
+      file: `${BASE}/datasheets/CUB_PUFFERS_DATA_SHEET.pdf`,
       category: "Graphites",
       order: 3,
     },
     {
       name: "No.1 Flake Graphite",
-      file: "/datasheets/NO.1_FLAKE_GRAPHITE.pdf",
+      file: `${BASE}/datasheets/NO.1_FLAKE_GRAPHITE.pdf`,
       category: "Graphites",
       order: 4,
     },
     {
       name: "No.2 Flake Graphite",
-      file: "/datasheets/NO.2_FLAKE_GRAPHITE.pdf",
+      file: `${BASE}/datasheets/NO.2_FLAKE_GRAPHITE.pdf`,
       category: "Graphites",
       order: 5,
     },
@@ -77,35 +79,35 @@ const DataSheets = () => {
   const sdsSheets = [
     {
       name: "BK Watermain Lubricant SDS",
-      file: "/sds/BK_LUBE_SDS.pdf",
+      file: `${BASE}/sds/BK_LUBE_SDS.pdf`,
     },
     {
       name: "BK Standard Watermain Lubricant SDS",
-      file: "/sds/BKSTANDARD_LUBE_SDS.pdf",
+      file: `${BASE}/sds/BKSTANDARD_LUBE_SDS.pdf`,
     },
     {
       name: "Standard Lube SDS",
-      file: "/sds/STANDARD_LUBE_SDS.pdf",
+      file: `${BASE}/sds/STANDARD_LUBE_SDS.pdf`,
     },
     {
       name: "Prover Lubricant SDS",
-      file: "/sds/PROVER_LUBE_SDS.pdf",
+      file: `${BASE}/sds/PROVER_LUBE_SDS.pdf`,
     },
     {
       name: "AL63 SDS",
-      file: "/sds/AL63_SDS.pdf",
+      file: `${BASE}/sds/AL63_SDS.pdf`,
     },
     {
       name: "FJ9220 Chain Lubricant SDS",
-      file: "/sds/FJ9220_SDS.pdf",
+      file: `${BASE}/sds/FJ9220_SDS.pdf`,
     },
     {
       name: "Grograph 201 SDS",
-      file: "/sds/GROGRAPH_201_SDS.pdf",
+      file: `${BASE}/sds/GROGRAPH_201_SDS.pdf`,
     },
     {
       name: "Graphites SDS (applies to all graphite products)",
-      file: "/sds/GRAPHITES_SDS.pdf",
+      file: `${BASE}/sds/GRAPHITES_SDS.pdf`,
     },
   ];
 
