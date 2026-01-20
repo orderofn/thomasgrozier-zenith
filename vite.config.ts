@@ -4,11 +4,16 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/thomasgrozier-zenith/", // ✅ REQUIRED for GitHub Pages
+  base: "/thomasgrozier-zenith/",
 
   server: {
     host: "::",
     port: 8080,
+  },
+
+  build: {
+    outDir: "dist",      // ✅ IMPORTANT for GitHub Pages
+    assetsDir: "assets", // ✅ default, but explicit is safer
   },
 
   plugins: [
