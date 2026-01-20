@@ -22,22 +22,23 @@ const Certifications = () => {
     },
   ];
 
+  const BASE = import.meta.env.BASE_URL;
   const certificates = [
     {
       name: "WRAS Approval Letter",
-      file: "/certificates/2203503_approval_letterWRAS.pdf",
+      file: `${BASE}/certificates/2203503_approval_letterWRAS.pdf`,
     },
     {
       name: "SAI Global Certificate (ISO 9001)",
-      file: "/certificates/Certificate_of_registration_Sai_Global_1.pdf",
+      file: `${BASE}/certificates/Certificate_of_registration_Sai_Global_1.pdf`,
     },
     {
       name: "ACS Certificate",
-      file: "/certificates/ACS_THOMAS_GROZIER_24_CLP_LY_036_1.pdf",
+      file: `${BASE}/certificates/ACS_THOMAS_GROZIER_24_CLP_LY_036_1.pdf`,
     },
     {
       name: "Watermark Certificate of Conformity",
-      file: "/certificates/CERTIFICATE_OF_CONFORMITY.pdf",
+      file: `${BASE}/certificates/CERTIFICATE_OF_CONFORMITY.pdf`,
     },
   ];
 
