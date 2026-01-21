@@ -4,7 +4,7 @@ import path from "path";
 import { componentTagger } from "lovable-tagger";
 
 export default defineConfig(({ mode }) => ({
-  base: "/thomasgrozier-zenith/",
+  base: "/", // ✅ MUST be root for custom domain
 
   server: {
     host: "::",
@@ -12,8 +12,8 @@ export default defineConfig(({ mode }) => ({
   },
 
   build: {
-    outDir: "dist",      // ✅ IMPORTANT for GitHub Pages
-    assetsDir: "assets", // ✅ default, but explicit is safer
+    outDir: "dist",
+    assetsDir: "assets",
   },
 
   plugins: [
