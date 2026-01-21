@@ -8,7 +8,6 @@ import ovenChainImage from "@/assets/industries/oven-chain.jpg";
 import wrasLogo from "@/assets/products/wras-logo.jpg";
 import watermarkLogo from "@/assets/products/watermark-logo.jpg";
 
-const BASE = import.meta.env.BASE_URL;
 const Products = () => {
   const products = [
     {
@@ -16,7 +15,7 @@ const Products = () => {
       description: "WaterMark AS/NZS 4020 approved lubricant for pipes supplying potable water.",
       image: bkWatermainImage,
       features: ["WaterMark AS/NZS 4020 Approved", "Potable Water Safe", "Bactericidal Formula"],
-      datasheet: `${BASE}/datasheets/BK_LUBRICANT_DATA_SHEET.pdf`,
+      datasheet: "/datasheets/BK_LUBRICANT_DATA_SHEET.pdf",
       logos: [watermarkLogo],
     },
     {
@@ -24,7 +23,7 @@ const Products = () => {
       description: "WaterMark AS/NZS 4020 and WRAS BS6920 approved bactericidal pipe jointing lubricant for pipes supplying potable water. Also used in Fire supply industries and Tunnel Boring Machines (TBM).",
       image: bkStandardImage,
       features: ["WaterMark AS/NZS 4020 Approved", "WRAS BS6920 Approved", "Fire Supply & TBM Applications"],
-      datasheet: `${BASE}/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf`,
+      datasheet: "/datasheets/BK_STAND_LUBE_DATA_SHEET.pdf",
       logos: [watermarkLogo, wrasLogo],
     },
     {
@@ -32,7 +31,7 @@ const Products = () => {
       description: "High-quality rubber ring pipe jointing lubricant designed for sewer pipes and non-potable water applications.",
       image: standardLubeImage,
       features: ["Sewer Pipes", "Rubber Ring Compatible", "Industrial Grade"],
-      datasheet: `${BASE}/datasheets/STANDARD_LUBE_DATA_SHEET.pdf`,
+      datasheet: "/datasheets/STANDARD_LUBE_DATA_SHEET.pdf",
       logos: [],
     },
     {
@@ -49,7 +48,7 @@ const Products = () => {
       description: "Dixon Microfyne Graphite lubricants for locks, hinges, bearings, fishing gear, mowers and more. The atom bomb of lubricants! Keeps auto locks and outdoor hinges from freezing.",
       image: cubPuffersImage,
       features: ["Auto Locks", "Anti-Freeze", "Easy Spray"],
-      datasheet: `${BASE}/datasheets/CUB_PUFFERS_DATA_SHEET.pdf`,
+      datasheet: "/datasheets/CUB_PUFFERS_DATA_SHEET.pdf",
       logos: [],
     },
     {
